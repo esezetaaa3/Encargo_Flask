@@ -1,0 +1,31 @@
+
+{% extends "base.html" %}
+
+{% block titulo %}Ejercicio 2{% endblock %}
+
+{% block contenido %}
+
+<div class="contenedor">
+
+    <h2>Ejercicio 2: Comparación de nombres</h2>
+
+    <form method="POST">
+
+        <label>Primer nombre</label>
+        <input type="text" name="nombre1" required>
+
+        <label>Segundo nombre</label>
+        <input type="text" name="nombre2" required>
+
+        <label>Tercer nombre</label>
+        <input type="text" name="nombre3" required>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+    <a href="{{ url_for('inicio') }}">Volver al menú</a>
+
+</div>
+
+{% endblock %}

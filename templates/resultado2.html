@@ -1,0 +1,28 @@
+
+{% extends "base.html" %}
+
+{% block titulo %}Resultado Ejercicio 2{% endblock %}
+
+{% block contenido %}
+
+<div class="contenedor">
+
+    <h2>Resultado del Ejercicio 2</h2>
+
+    <p>El nombre con mayor cantidad de caracteres es:</p>
+
+    <h2>{{ nombre }}</h2>
+
+    <p>Cantidad de caracteres: {{ cantidad }}</p>
+
+    <a href="{{ url_for('ejercicio2') }}" class="boton">
+        Volver
+    </a>
+
+    <a href="{{ url_for('inicio') }}" class="boton">
+        Menú principal
+    </a>
+
+</div>
+
+{% endblock %}
